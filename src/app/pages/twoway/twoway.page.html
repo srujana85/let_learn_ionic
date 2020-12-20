@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>   2 Way Binding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content fullscreen>
+    <ion-card >  
+      <h1>Name is -->{{ data.name | uppercase }}</h1>
+      <h2>Age is -->{{ data.age }}</h2>
+      <h3>Date Of Birth --> {{ data.dob | date: 'mediumDate'	 }}</h3>
+    </ion-card>
+    <ion-list lines="full" class="ion-no-margin">
+      <ion-list-header lines="full">
+        <ion-label>
+      Inputs
+        </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input   [(ngModel)]="data.name" required="true" type="text" placeholder="Please Enter Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Age</ion-label>
+        <ion-input   [(ngModel)]="data.age" min="18" max="120"  required="true" type="number"  placeholder="Please Enter Age"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Date Of Birth</ion-label>
+        <ion-input    [(ngModel)]="data.dob" required="true" type="date" placeholder="Please Enter Date Of Birth"></ion-input>
+      </ion-item>
+      <ion-item>
+       <ion-button (click)="letNavigate()"  > navigate to HTTP</ion-button>
+      </ion-item>
+    </ion-list>
+</ion-content>

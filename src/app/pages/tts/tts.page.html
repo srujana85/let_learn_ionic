@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>TTS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align:center">
+    <textarea rows="5" [(ngModel)] = "text"></textarea>
+  </div>
+<div style="text-align:center"><ion-button (click)="speak()" >Speak</ion-button></div>
+  </ion-content>
+
+
+
+
+

@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-avatar slot="start" class="contact-avatar">
+      <img src="https://cdn.auth0.com/blog/logos/ionic-framework.png" />
+    </ion-avatar>
+    <ion-title>
+      <ion-label>
+        <h2>Ionic 4</h2>
+      </ion-label>
+    </ion-title>
+    <ion-buttons slot="end">
+
+      <ion-button routerLink="/add-organization">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-title>Pages</ion-title>
+        <ion-title class="subtitle">let learn Ionic 4</ion-title>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div routerLink="/twoway">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/1599/1599711.svg" />
+
+          <h6>2 Way </h6>
+
+        </div>
+      </ion-col>
+      <ion-col>
+        <div routerLink="/http">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/1008/1008792.svg" />
+
+          <h6>HTTP</h6>
+
+        </div>
+      </ion-col>
+      <ion-col>
+        <div routerLink="/qr">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/714/714390.svg" />
+
+          <h6>QR</h6>
+
+        </div>
+      </ion-col>
+      <ion-col>
+        <div routerLink="/todo">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/748/748926.svg" />
+
+          <h6>Todo List</h6>
+
+        </div>
+      </ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div routerLink="/crud">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/335/335578.svg" />
+
+          <h6>Array Ops</h6>
+
+        </div>
+      </ion-col>
+      <ion-col>
+        <div routerLink="/tts">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/3025/3025398.svg" />
+
+          <h6>TTS</h6>
+
+        </div>
+      </ion-col>
+      <ion-col>
+        <div routerLink="/draw">
+
+          <img class="app" src="https://www.flaticon.com/svg/static/icons/svg/852/852785.svg" />
+
+          <h6>Draw</h6>
+
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="light">
+      <ion-icon (click)="go()" name="person-add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

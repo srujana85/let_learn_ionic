@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Http</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card >  
+    <ion-item>
+      <ion-label position="floating">Input URL</ion-label>
+      <ion-input [(ngModel)]="url" rows="5" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Input Data</ion-label>
+      <ion-textarea [(ngModel)]="data" rows="5" ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="makeApiRequest('GET')" size="small" color="secondary">GET</ion-button>
+      <ion-button  (click)="makeApiRequest('POST')" size="small" color="warning">POST</ion-button>
+      <ion-button  (click)="makeApiRequest('PUT')" size="small" color="tertiary">PUT</ion-button>
+
+    </ion-item>
+  </ion-card>
+
+</ion-content>
+

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Qr</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align:center">
+    <textarea rows="5" [(ngModel)] = "value"></textarea>
+  </div>
+   <div class="center">  
+    <ngx-qrcode
+    [elementType]="elementType"
+    [errorCorrectionLevel]="correctionLevel"
+    [value]="value"
+    cssClass="bshadow"></ngx-qrcode>
+  </div>
+  </ion-content>
+
+
+
+
+
